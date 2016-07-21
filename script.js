@@ -31,3 +31,68 @@ function upCase(){
 	document.getElementById("message").value = (text.toUpperCase() + ", Your text is now capitalized!");
 
 }
+
+
+
+
+$(document).ready(function(){
+//Fade on hover
+	var $nav = $("li.topnav");
+	$nav.hover(function(){
+			$(this).fadeTo("fast", 0.25);
+		},function(){
+			$(this).fadeTo("fast", 1);
+		}
+	);
+
+	//Click li to change background******
+	var $skills = $("li.skills");
+	$skills.click(function(e){
+		var $clone = $(this).clone();
+		$(this).css("background-color", "silver");
+		//.append(" " + e.type);	
+	});
+	$skills.dblclick(function(e){
+		$(this).css("background-color", "white");
+		
+	});
+//Portfolio drop down*********
+	var $port = $("li#port");
+	var $projects = $("ul#projects");
+	//$projects.hide();
+	$port.hover(function(){
+		$projects.show();
+	// }
+	// function(){
+	// 	$projects.hide();
+	});
+	$(document).click(function(){
+		$projects.hide();
+
+	});
+
+	var $list = $("#header");
+	$list.hide();
+	$list.slideToggle(1000, "swing");
+	
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

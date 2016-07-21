@@ -4,19 +4,25 @@ body{
 	position:relative;
 	margin:0px;
 	padding:0px;
-	background:url("./images/mountains.jpeg") no-repeat center center fixed;  
+	font-family:verdana;
+	/*background-color:lightgrey;*/
+	background:url("./images/sky.jpg");  
+	/*repeat center center fixed for image ****/
 
 }
+/*h1{
+	
+}*/
 /*body::after{
    	content: "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-	background:url("./images/mountains.jpeg") no-repeat center center fixed;
+	background:url("./images/mountains.jpeg") repeat center center fixed;
 	width: 100%;
     height: 100%;
-    /*opacity : 0.3;
+    opacity : 0.5;
     z-index: -1;
    }*/
    p, li, blockquote {
@@ -50,7 +56,8 @@ body{
 	margin-left:-254px;*/
 }
 header{
-	background-color:silver;
+	/*background-color:rgba(192, 192, 192, .5);*/
+	/*border*/
 }
 #header{
 	width:100%;
@@ -70,13 +77,13 @@ a{
 .topnav{
 	/*display:none;*/
 	display:inline-block;
-	font-size:22px;
-	padding:5px;
+	font-size:1em;
+	padding:3px;
 	margin:5px;
 }
-.topnav:hover{
+/*.topnav:hover{
 	text-decoration:underline;
-}
+}*/
 .dropdown{
 	display:inline;
 	font-size:22px;
@@ -115,32 +122,38 @@ ul#nav li.icon{
 }
 img.rows{
 	display:inline-block;
-	width:24.2%;
-	padding:5px;
-	background-color:silver;
-	float:left;	
-	border-radius:100px;
+	width:10%;
+	height:auto;
+	margin:auto;
+	/*width:24.2%;*/
+	padding:7%;
+	/*background-color:silver;*/
+	/*float:left;	*/
+	/*border-radius:100px;*/
 	
 }
 .main-content{
 
 	height:100%;
-	margin-bottom:200px;
+	/*margin-bottom:200px;*/
 }
 
 .main-content>h1{
-	/*width:29%;*/
-	display:table;
+	width:39%;
+	/*display:table;*/
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
 	padding:5px;
 	margin-top:100px;
-	background-color:white;
-	border-radius:5px;
+	display:block;
+	font-size:3em;
+	font-family: 'Kaushan Script', cursive;
+	/*background-color:white;*/
+	/*border-radius:5px;*/
 }
 #title{
-	width:99%;
+	width:auto;
 	text-align:center;
 	margin-left:-3.5%;
 	/*margin-bottom:150px;*/
@@ -153,7 +166,7 @@ li.skills{
 	margin-right:5px;
 	margin-left:5px;
 	padding:5px;
-	background-color:white;
+	/*background-color:white;*/
 	border-radius:5px;
 }
 .intro{
@@ -167,7 +180,7 @@ li.skills{
 	width:99%;
 	text-align:center;
 	padding-top:5%;
-	background-color:white;
+	/*background-color:white;*/
 }
 form{
 	margin-left:30%;
@@ -206,7 +219,7 @@ textarea{
 	width:50%;
 	margin-right:auto;
 	margin-left:auto;
-	background-color:white;
+	/*background-color:white;*/
 	border-radius:5px;
 	padding:5px;
 }
@@ -216,13 +229,13 @@ h2{
 h3{
 	font-size:22px;
 	text-decoration:underline;
-	background-color:white;
+	/*background-color:white;*/
 	border-radius:5px;
 	display:table;
 }
 form p{
 	width:15%;
-	background-color:white;
+	/*background-color:white;*/
 	border-radius:5px;
 }
 #grand{
@@ -231,9 +244,9 @@ form p{
 }
 ul#nav a.active{
 	display:inline;
-	background-color:white;
+	/*background-color:white;*/
+	text-decoration:underline;
 	border-radius:5px;
-	padding:3px;
 }
 .dropdown-content a:hover{
 	/*background-color:white;*/
@@ -243,7 +256,7 @@ ul#nav a.active{
 	width:70%;
 	margin-right:auto;
 	margin-left:auto;
-	background-color:white;
+	/*background-color:white;*/
 	border-radius:5px;
 	padding:5px;
 	margin-top:20px;
@@ -289,11 +302,11 @@ ul#nav a.active{
 }
 .bottomnav{
 	text-align:center;
-	font-size:1em;
+	font-size:.8em;
 	display:inline-block;
 	list-style-type:none;
 	margin-top:50px;
-	background-color:silver;
+	/*background-color:silver;*/
 	margin-right:50px;
 }
 #end-nav{
@@ -313,9 +326,9 @@ ul#nav a.active{
 		display:none;
 	}
 	.main-content h1{
-		/*width:auto;*/
-		display:table;
-		white-space:nowrap;
+		width:auto;
+		/*display:table;*/
+		white-space:wrap;
 	}
 	#end-nav{
 		display:none;
@@ -344,6 +357,10 @@ ul#nav a.active{
 		background-color:silver;
 
 	}
+/*	h1{
+		word-wrap:break-word;
+
+	}*/
 	.main-content .resume h1{
 		display:block;
 		white-space:normal;
@@ -361,6 +378,14 @@ ul#nav a.active{
 		font-size:.7em;
 	}
 
+}
+#projects{
+	display:none;
+	list-style-type: none;
+	width:10%;
+	float:right;
+	margin-right:16%;
+	
 }
 
 
