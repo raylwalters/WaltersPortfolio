@@ -1,10 +1,12 @@
 function setActive(){
+	if($(document).width()>850){
 	page = document.getElementById("main-nav").getElementsByTagName("a");
 	for(i=0; i<page.length; i++){
 		if(document.location.href.indexOf(page[i].href)>=0){
 			page[i].className="active";
 		}
 	}
+  }
 }
 window.onload = setActive;
 
@@ -75,9 +77,6 @@ $(document).ready(function(){
 	$list.hide();
 	$list.slideToggle(1000, "swing");
 	
-
-
-
 
 
 
